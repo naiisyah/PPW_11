@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Numbers</title>
+    <script>
+        function compareNumbers() {
+            var num1 = parseFloat(prompt("Masukkan bilangan pertama:"));
+            var num2 = parseFloat(prompt("Masukkan bilangan kedua:"));
+            
+            if (num1 > num2) {
+                alert("BILANGAN KE-1 LEBIH BESAR DARI BILANGAN KE-2");
+            } else if (num1 < num2) {
+                alert("BILANGAN KE-2 LEBIH BESAR DARI BILANGAN KE-1");
+            } else {
+                alert("KEDUA BILANGAN SAMA BESAR");
+            }
+        }
+    </script>
+</head>
+<body onload="compareNumbers()">
+</body>
+</html>
+
