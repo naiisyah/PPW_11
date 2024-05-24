@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Variabel dalam Javascript</title>
+    <script>
+// 2
+        // FUNGSI CONSOLE.LOG
+        console.log("Hello gaiss");
+        // FUNGSI DOCUMENT WRITE
+        document.write("<br>Lagi ngapain nihh?<br/>");
+        // FUNGSI ALERT
+        alert("Wellcome back gaiss");
+// 3
+    // VARIABEL JAVASCRIPT DALAM HTM
+        var name = "Petani Kode";
+        var visitorCount = 50322;
+        var isActive = true;
+        var url = "https://www.petanikode.com";
+
+        alert("Selamat datang di " + name );
+
+        document.write("Nama Situs : " + name + "<br>");
+        document.write("Jumlah Pengunjung : " + visitorCount + "<br>");
+        document.write("Status Aktif : " + isActive + "<br>");
+        document.write("Alamat URL : " + url + "<br>");
+// 8
+    // DIALOG PROMPT
+    // JENDELA DIALOG ALERT
+        alert("Selamat datang di tutorial Javascript")
+
+    // JENDELA DIALOG CONMFIRM
+        var yakin = confirm("Apakah kamu yakin akan mengunjungi petanikode?");
+
+        if (yakin) {
+            window.location = "https://www.petanikode.com";
+        }else{
+            document.write("Baiklah, tetap disini saja ya:)");
+        }
+
+    // JENDELA DIALOG PROMPT
+        var name = prompt("Siapa nama kamu?", "");
+        document.write("<p>Hello " + name + "</p>");
+
+// // 9
+            // OPERATOR ARITMATIKA(+, -, *, **, /, %)
+            var a = 5;
+            var b = 3;
+
+            // pertambahan +
+            var c = a + b;
+            document.write (c + "</br>");
+            // pengurangan -
+            var c = a - b;
+            document.write (c + "</br>");
+            // perkalian *
+            var c = a * b;
+            document.write (c + "</br>");
+            // pembagian /
+            var c = a / b;
+            document.write (c + "</br>");
+            // peangkat **
+            var c = a ** 2;
+            document.write (c + "</br>");
+            // habis dibagi(modulo) %
+            var c = a % b;
+            document.write (c + "</br>");
+
+    // OPERATOR PENUGASAN (=, +=, -=, *=, **=, /=, %=)
+        document.write("Mula-mula nilai score... <br>");
+        // pengisian nilai
+        var score = 100;
+        document.write("score = " + score + "<br/>");
+        // pengisian dan menjumlahkan dengan 5
+        score += 5;
+        document.write("score = " + score + "</br>");
+        // pengisian dan pengurangan dengan 2
+        score -= 2;
+        document.write("score = " + score + "</br>");
+        // pengisian dan pembagian dengan 4
+        score /= 4;
+        document.write("score = " + score + "</br>");
+        // pengisian dan pemangkatan dengan 2
+        score **= 2;
+        document.write("score = " + score + "</br>");
+        // pengisian dan modulo dengan 3
+        score %= 3;
+        document.write("score = " + score + "</br>");
+
+    </script>
+</head>
+<body>
+    <!-- JENDELA DIALOG BUTTON -->
+    <!-- <button onClick="alert('Tombol diklik!')">Klik Saya</button> -->
+
+    <!-- OPERATOR RELASI DAN PERBANDINGAN (>, <, ==(TIDAK MEMENTINGKAN TIPE DATA), ===(MEMENTINGKAN TIPE DATA), !=, !==, >=, <=) -->
+    <script>
+        var aku = 20;
+        var kamu = 19;
+
+        // sama dengan
+        var hasil = aku == kamu;
+        document.write(`${aku} == ${kamu} = ${hasil}<br/>`);
+        // lebih besar
+        var hasil = aku > kamu;
+        document.write(`${aku} > ${kamu} = ${hasil}<br/>`);
+        // lebih besar sama dengan
+        var hasil = aku >= kamu;
+        document.write(`${aku} >= ${kamu} = ${hasil}<br/>`);
+        // lebih kecil
+        var hasil = aku < kamu;
+        document.write(`${aku} < ${kamu} = ${hasil}<br/>`);
+        // lebih kecil sama dengan
+        var hasil = aku <= kamu;
+        document.write(`${aku} <= ${kamu} = ${hasil}<br/>`);
+        // tidak samadengan
+        var hasil = aku != kamu;
+        document.write(`${aku} != ${kamu} = ${hasil}<br/>`);
+
+    // OPERATOR LOGIKA (&&, ||, !)
+        var aku = 20;
+        var kamu = 19;
+
+        var benar = aku > kamu;
+        var salah = aku < kamu;
+        // and &&
+        var hasil = benar && salah;
+        document.write(`${benar} && ${salah} = ${hasil}<br/>`);
+        // or ||
+        var hasil = benar || salah;
+        document.write(`${benar} || ${salah} = ${hasil}<br/>`);
+        // not !
+        var hasil = ! benar;
+        document.write(`!${benar} = ${hasil}<br/>`);
+        
+    // OPERATOR BITWISE (&, |, ^, ~, <<, >>, >>>)
+        var x = 4;
+        var y = 3;
+
+        // and &
+        var hasil = x & y;
+        document.write(`${x} & ${y} = ${hasil}<br/>`);
+        // or |
+        var hasil = x | y;
+        document.write(`${x} | ${y} = ${hasil}<br/>`);
+        // xor ^
+        var hasil = x ^ y;
+        document.write(`${x} ^ ${y} = ${hasil}<br/>`);
+        // negasi ~
+        var hasil = ~x;
+        document.write(`~${x}= ${hasil}<br/>`);
+        // right shift >>
+        var hasil = x >> y;
+        document.write(`${x} >> ${y} = ${hasil}<br/>`);
+        // left shift
+        var hasil = x << y;
+        document.write(`${x} << ${y} = ${hasil}<br/>`);
+        // right shift (unsigned)
+        var hasil = x >>> y;
+        document.write(`${x} >>> ${y} = ${hasil}<br/>`);
+    // OPERATOR TERNARY
+        var pertanyaan = confirm("Apakah kamu berumur diatas 18 tahun?");
+
+        var hasil = pertanyaan? "Selamat datang" : "Kamu tidak boleh di sini";
+        document.write(hasil);
+    </script>
+</body>
+</html>
